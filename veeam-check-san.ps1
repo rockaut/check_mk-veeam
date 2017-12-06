@@ -2,6 +2,7 @@ Add-PSSnapin VeeamPSSnapin
 
 $jobs = Get-VBRJob
 
+Write-Host "<<<local>>>"
 $jobs | ForEach-Object {
     $currentJob = $_
 
