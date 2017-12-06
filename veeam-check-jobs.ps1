@@ -12,6 +12,7 @@ $jobMaxDurationMinutes = @{
 
 $jobs = Get-VBRJob
 
+Write-Host "<<<local>>>"
 $jobs | ForEach-Object {
     $currentJob = $_
     $lastSession = $currentJob.FindLastSession()
